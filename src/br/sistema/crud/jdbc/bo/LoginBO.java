@@ -10,6 +10,9 @@ public class LoginBO {
 	
 	public boolean logar(LoginDTO loginDTO) throws NegocioException{
 		boolean resultado = false;
+		//
+		// estou fazendo um comentário para ver o versionamento feito pelo git
+		//
 		try{
 			if(loginDTO.getNome() == null || "".equals(loginDTO)){
 				throw new NegocioException("Logn Obrigatorio");
